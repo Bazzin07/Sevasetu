@@ -1,0 +1,32 @@
+{
+  "hosting": {
+    "public": "frontend/out",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "/needs/new",
+        "destination": "/needs/new.html"
+      },
+      {
+        "source": "/needs/*",
+        "destination": "/needs/_.html"
+      },
+      {
+        "source": "/volunteers/register",
+        "destination": "/volunteers/register.html"
+      },
+      {
+        "source": "/volunteers/*",
+        "destination": "/volunteers/_.html"
+      },
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}

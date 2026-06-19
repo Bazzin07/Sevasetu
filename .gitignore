@@ -1,0 +1,105 @@
+# ─── Environments & Secrets (NEVER commit) ───────────────────────────────────
+.env
+.env.*
+!.env.example
+.venv/
+venv/
+ENV/
+env.bak/
+venv.bak/
+backend/.env
+backend/.env.*
+frontend/.env.local
+frontend/.env.production
+
+# ─── Firebase / GCloud credentials ───────────────────────────────────────────
+.firebaserc
+.firebase/
+*-service-account*.json
+*serviceAccountKey*.json
+firebase-service-account.json
+
+# ─── Testing & Seed Scripts ───────────────────────────────────────────────────
+backend/tests/
+backend/test_*.py
+backend/seed_*.py
+backend/backfill_embeddings.py
+backend/geocode_existing_needs.py
+backend/*.log
+backend/pytest.ini
+backend/.pytest_cache/
+
+# ─── DevOps / Infrastructure ─────────────────────────────────────────────────
+scripts/
+backend/scripts/
+docker-compose.yml
+backend/Dockerfile
+backend/Dockerfile.cloudrun
+backend/.dockerignore
+cloud-sql-proxy
+db-init/
+pgvector_build/
+*.terraform/
+*.tf
+*.tfvars
+
+# ─── Runtime Data ─────────────────────────────────────────────────────────────
+backend/data/
+backend/graphify-out/
+graphify-out/
+
+# ─── Reports / Docs not needed in repo ───────────────────────────────────────
+report.md
+frontend_report.md
+DEPLOYMENT.md
+system_readiness_audit.md
+frontend/AGENTS.md
+frontend/CLAUDE.md
+
+# ─── Python ──────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# ─── Node / Frontend ─────────────────────────────────────────────────────────
+node_modules/
+frontend/node_modules/
+frontend/.next/
+frontend/out/
+frontend/build/
+frontend/.DS_Store
+frontend/next-env.d.ts
+
+# ─── IDE / Tools ─────────────────────────────────────────────────────────────
+.vscode/
+.idea/
+.agent/
+.gemini/
+
+# ─── OS ──────────────────────────────────────────────────────────────────────
+.DS_Store
+*.log
+*.db
+*.sqlite
+*.sqlite3
+
+# ─── TypeScript Build ─────────────────────────────────────────────────────────
+*.d.ts
+*.tsbuildinfo
